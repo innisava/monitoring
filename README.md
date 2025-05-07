@@ -46,23 +46,23 @@ chmod +x monitor.sh
 
 ### 4.  **Параметры:**
 ```bash
-  -p,  --proc [arg]               Работа с /proc (cpuinfo, meminfo, uptime, version, all)
-  -c,  --cpu                         Информация о процессоре
-  -tp, --topproc                 Топ-5 процессов по загрузке процессора
-  -m,  --memory                Информация о памяти
-  -d,  --disks                       Информация о дисках
-  -n,  --network                  Информация о сети
-  -u,  --users                       Информация о пользователях
-  -la, --loadaverage            Средняя нагрузка на систему
-  -k,  --kill <PID>               Завершить процесс
-  -o,  --output <файл>      Сохранить вывод в файл (по умолчанию: $DEFAULT_OUTPUT)
-  -h,  --help                         Показать справку
+  -p,  --proc [arg]    Работа с /proc (cpuinfo, meminfo, uptime, version, all)
+  -c,  --cpu           Информация о процессоре
+  -tp, --topproc       Топ-5 процессов по загрузке процессора
+  -m,  --memory        Информация о памяти
+  -d,  --disks         Информация о дисках
+  -n,  --network       Информация о сети
+  -u,  --users         Информация о пользователях
+  -la, --loadaverage   Средняя нагрузка на систему
+  -k,  --kill <PID>    Завершить процесс
+  -o,  --output <файл> Сохранить вывод в файл (по умолчанию: $DEFAULT_OUTPUT)
+  -h,  --help          Показать справку
 ```
 
 ###  5.  **Примеры:**
 ```bash
 # Запуск с флагами:
-./monitor.sh --cpu                           # Мониторинг процессора
-./monitor.sh --proc cpuinfo            # Показать информацию о CPU из /proc
+./monitor.sh --cpu                  # Мониторинг процессора
+./monitor.sh --proc cpuinfo         # Показать информацию о CPU из /proc
 ./monitor.sh -c -m -o sys_info.log  # Сохранить информацию в файл
 ```
